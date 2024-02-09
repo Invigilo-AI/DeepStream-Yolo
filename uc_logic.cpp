@@ -62,7 +62,7 @@ extern "C" {
         if (it != ds.end()) {
             auto it2 = ds[stream_id].find(track_id);
             if (it2 != ds[stream_id].end()) {
-                if (current_time - ds[stream_id][track_id] > 50000000)  {
+                if (current_time - ds[stream_id][track_id] > 900000000000)  {
                     return true;
                 } else {
                     return false;
