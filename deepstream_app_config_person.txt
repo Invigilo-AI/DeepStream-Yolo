@@ -1,6 +1,7 @@
 [application]
 enable-perf-measurement=1
 perf-measurement-interval-sec=5
+kitti-track-output-dir=/opt/nvidia/deepstream/deepstream-6.2/DeepStream-Yolo/detections
 
 [tiled-display]
 enable=1
@@ -29,7 +30,7 @@ gpu-id=0
 nvbuf-memory-type=0
 
 [sink1]
-enable=1
+enable=0
 #Type - 1=FakeSink 2=EglSink 3=File 4=RTSPStreaming
 type=4
 gpu-id=0
